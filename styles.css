@@ -1,0 +1,88 @@
+.app {
+    max-width: 800px;
+    border: 1px solid black;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+
+.app-input {
+    margin: 40px auto 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-body-hide {
+    display: none;
+}
+
+.search-form-hide {
+    display: none;
+}
+
+ul {
+    padding: 0;
+}
+
+
+.ul-header {
+    border: 1px solid rgb(172, 164, 164);
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: bold;
+}
+
+li {
+    margin-right: 200px;
+    border: 1px solid rgb(201, 120, 120);
+    border-radius: 4px;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.alert {
+    display: none;
+    white-space: nowrap;
+}
+
+.check-valid input:invalid {
+    box-shadow: 0 0 2px 2px red;
+}
+
+.check-valid input:valid {
+    box-shadow: 0 0 2px 2px green;
+}
+
+.check-valid input:invalid ~ .alert {
+    display: block;
+}
+
+.check-valid:invalid button {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.input-required {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
